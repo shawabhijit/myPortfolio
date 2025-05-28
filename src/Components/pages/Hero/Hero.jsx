@@ -1,15 +1,16 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerspectiveCamera, Ring } from '@react-three/drei'
-import HackerRoom from '../HackerRoom/HackerRoom'
-import CanvasLoader from '../Loader/CanvasLoader'
+import HackerRoom from '../../HackerRoom/HackerRoom'
+import CanvasLoader from '../../Loader/CanvasLoader'
 import { useMediaQuery } from 'react-responsive'
-import { calculateSizes } from '../../Constants'
-import Target from '../Target/Target'
-import ReactLogo from '../ReactLogo/ReactLogo'
-import Cube from '../Cube/Cube'
-import Rings from '../Ring/Rings'
-import HeroCamera from '../HeroCamera'
+import { calculateSizes } from '../../../Constants'
+import Target from '../../Target/Target'
+import ReactLogo from '../../ReactLogo/ReactLogo'
+import Cube from '../../Cube/Cube'
+import Rings from '../../Ring/Rings'
+import HeroCamera from '../../HeroCamera'
+import Button from '../../Button'
 
 const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -45,10 +46,10 @@ const Hero = () => {
                         </HeroCamera>
 
                         <group>
-                            <Target position={sizes.targetPosition} />
-                            <ReactLogo position={sizes.reactLogoPosition} />
-                            <Cube position={sizes.cubePosition} />
-                            <Rings position={sizes.ringPosition} />
+                            {/* <Target position={sizes.targetPosition} />  */}
+                            {/* <ReactLogo position={sizes.reactLogoPosition} /> */}
+                            {/* <Cube position={sizes.cubePosition} /> */}
+                            {/* <Rings position={sizes.ringPosition} /> */}
                         </group>
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 10]} intensity={0.5} />
@@ -57,7 +58,7 @@ const Hero = () => {
             </div>
             <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
                 <a href="#contact" className='w-fit'>
-                    
+                    <Button name="Let's work together" isBeam   containerClass="sm:w-fit w-full sm:min-w-96"/>
                 </a>
             </div>
         </section>
