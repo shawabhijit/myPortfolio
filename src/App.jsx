@@ -2,7 +2,6 @@ import React from 'react'
 import Navber from './Components/Navber/Navber'
 import Hero from './Components/pages/Hero/Hero'
 import About from './Components/pages/About/About'
-import { SpotlightNewDemo } from './Components/SpotlightTest'
 import { Spotlight } from './Components/ui/SpotlightNew'
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
       <main className='max-w-7xl mx-auto p-4 relative'>
         <Navber />
         <Hero />
-        {/* <SpotlightNewDemo /> */}
         <About />
       </main>
     
