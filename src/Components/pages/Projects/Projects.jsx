@@ -1,8 +1,7 @@
-import { div } from "motion/react-client";
 import { myProjects } from "../../../Constants"
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Center, ContactShadows, OrbitControls } from "@react-three/drei";
+import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../Loader/CanvasLoader";
 import DemoComputer from "../../DemoComputer/DemoComputer";
 
@@ -37,7 +36,7 @@ const Projects = () => {
                     <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rouded-lg"
                         style={currentProject.logoStyle}
                     >
-                        <img src={currentProject.logo} alt="logo" className="w-10 h-10 shadow-sm" />
+                        <img src={currentProject.logo} alt="logo" className="w-10 h-10 shadow-sm object-cover" />
                     </div>
                     <div className="flex flex-col gap-5 text-white-600 my-5">
                         <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
