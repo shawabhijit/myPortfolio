@@ -4,6 +4,7 @@ import Hero from './Components/pages/Hero/Hero'
 import About from './Components/pages/About/About'
 import { Spotlight } from './Components/ui/SpotlightNew'
 import Projects from './Components/pages/Projects/Projects'
+import Contact from './Components/pages/Contact/Contact'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Hero />
         <About />
         <Projects />
+        <Contact />
       </main>
     
     </>

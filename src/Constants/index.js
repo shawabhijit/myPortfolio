@@ -29,7 +29,6 @@ export const myProjects = [
         subdesc:
             'HiakriHub provides multiple features to manage vendor account as well as customer accoutn , features like - vendor can create products manage those products and also manage orders and can see full analytics of the account , In the customer side customer can wishlist product , save products in the cart and buy any product using secure payemtn system (Razorpay).',
         href: 'https://hiakrihub.netlify.app/',
-        texture: '/textures/project/project1.mp4',
         logo: '/assets/hiakriHub-logo.png',
         logoStyle: {
             backgroundColor: '#2A1816',
@@ -81,7 +80,6 @@ export const myProjects = [
         subdesc:
             'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
         href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
             backgroundColor: '#13202F',
