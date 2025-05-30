@@ -3,6 +3,7 @@ import Navber from './Components/Navber/Navber'
 import Hero from './Components/pages/Hero/Hero'
 import About from './Components/pages/About/About'
 import { Spotlight } from './Components/ui/SpotlightNew'
+import Projects from './Components/pages/Projects/Projects'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Navber />
         <Hero />
         <About />
+        <Projects />
       </main>
     
     </>
