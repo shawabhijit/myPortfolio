@@ -21,7 +21,7 @@ const Hero = () => {
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     return (
-        <section className='min-h-screen w-full flex flex-col relative overflow-hidden'>
+        <section className='min-h-screen w-full flex flex-col relative overflow-hidden ' id='home'>
             {/* <Spotlight /> */}
             <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
                 <p className='sm:text-4xl text-2xl font-medium text-white text-center font-generalsans'>

@@ -2,6 +2,78 @@ import React from 'react'
 import Globe from 'react-globe.gl'
 import Button from '../../Button'
 
+const techStack = [
+    {
+        name: "javaScript",
+        image: "/assets/JavaScript.png",
+    },
+    {
+        name: "TypeScript",
+        image: "/assets/typescript.png",
+    },
+    {
+        name: "Java",
+        image: "/assets/Java.png",
+    },
+    {
+        name: "React",
+        image: "/assets/react.svg",
+    },
+    {
+        name: "Redux",
+        image: "/assets/Redux.png",
+    },
+    {
+        name: "Node.js",
+        image: "/assets/Node.js.png",
+    },
+    {
+        name: "Spring Boot",
+        image: "/assets/spring-boot.png",
+    },
+    {
+        name: "Hibernate",
+        image: "assets/Hibernate.png",
+    },
+    {
+        name: "PostgreSQL",
+        image: "/assets/postgresql-48.png",
+    },
+    {
+        name: "Tailwind CSS",
+        image: "/assets/tailwindcss.png",
+    },
+    {
+        name: "Framer Motion",
+        image: "/assets/framer.svg",
+    },
+    {
+        name: "Maven",
+        image: "/assets/Apache Maven.png",
+    },
+    {
+        name: "Docker",
+        image: "/assets/docker.png",
+    },
+    
+    {
+        name: "Notion",
+        image: "/assets/notion.svg",
+    },
+    {
+        name: "Three.js",
+        image: "/assets/Three.js.png",
+    },
+    {
+        name: "Git",
+        image: "assets/Git.png"
+    },
+    {
+        name: "GitHub",
+        image: "/assets/github.svg",
+    },
+]
+
 const About = () => {
 
     const [hasCopied, setHasCopied] = React.useState(false);
@@ -30,7 +102,15 @@ const About = () => {
                 </div>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:w-[276px] h-fit object-contain' />
+                        <div className="relative flex h-[280px] w-full flex-wrap items-center justify-center overflow-hidden">
+                            {
+                                techStack.map((tech, index) => (
+                                    <div key={index} className="flex items-center justify-center m-1 p-2 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                        <img src={tech.image} alt={tech.name} className="h-8 w-8 rounded-full" />
+                                    </div>
+                                ))
+                            }
+                        </div>
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
                             <p className='grid-subtext'>I Specialize in JAVA with a focus on Spring Boot also have keen knowledge of JavaScript/TypeScript with a focus on React ecosystem. </p>
