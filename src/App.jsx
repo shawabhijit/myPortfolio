@@ -1,11 +1,10 @@
-import React from 'react'
 import Navber from './Components/Navber/Navber'
 import Hero from './Components/pages/Hero/Hero'
-import About from './Components/pages/About/About'
 import { Spotlight } from './Components/ui/SpotlightNew'
 import Projects from './Components/pages/Projects/Projects'
 import Contact from './Components/pages/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import About from './Components/pages/About/About'
 
 const App = () => {
   return (

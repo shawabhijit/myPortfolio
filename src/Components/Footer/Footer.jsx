@@ -1,4 +1,22 @@
-import React from 'react'
+import {motion} from 'framer-motion';
+
+const contacts = [
+    {
+        name: 'Linkedin',
+        image: '/assets/LinkedIn.png',
+        link: 'https://www.linkedin.com/in/abhijit-sahoo-354b03253/',
+    },
+    {
+        name: 'Github',
+        image: '/assets/github.svg',
+        link: 'https://github.com/shawabhijit',
+    },
+    {
+        name: 'Instagram',
+        image: '/assets/instagram.svg',
+        link: 'https://www.instagram.com/abhijit_sahoo_7/',
+    },
+]
 
 const Footer = () => {
     return (
@@ -9,21 +27,23 @@ const Footer = () => {
                 <p>Privacy Policy</p>
             </div>
             <div className='flex gap-3'>
-                <div className='social-icon'>
-                    <a href="https://github.com/shawabhijit" className='flex items-center justify-center w-full h-full' target="_blank" rel="noreferrer">
-                        <img src="/assets/github.svg" alt="github" className='w-1/2 h-1/2' />
-                    </a>
-                </div>
-                <div className='social-icon'>
-                    <a href="https://www.linkedin.com/in/abhijit-sahoo-354b03253/" className='flex items-center justify-center w-full h-full' target="_blank" rel="noreferrer">
-                        <img src="/assets/LinkedIn.png" alt="linkedin" className='w-1/2 h-1/2' />
-                    </a>
-                </div>
-                <div className='social-icon'>
-                    <a href="https://www.instagram.com/abhijit_sahoo_7/" className='flex items-center justify-center w-full h-full' target="_blank" rel="noreferrer">
-                        <img src="/assets/instagram.svg" alt="instagram" className='w-1/2 h-1/2' />
-                    </a>
-                </div>
+                {
+                    contacts.map((contact, index) => (
+                        <motion.div 
+                            className="social-icon" 
+                            key={index}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            custom={index}
+                            transition={{ delay: 0.05 * index, duration: 1, ease: 'easeInOut' }}
+                        >
+                            <a href={contact.link} className='flex items-center justify-center w-full h-full' target="_blank" rel="noreferrer">
+                                <img src={contact.image} alt={contact.name} className='w-1/2 h-1/2' />
+                            </a>
+                        </motion.div>
+                    ))
+                }
             </div>
             <p className='text-white-500'>© 2025 Abhijit. All rights reserved.</p>
         </section>
@@ -31,3 +51,5 @@ const Footer = () => {
 }
 
 export default Footer
+
+    

@@ -1,17 +1,16 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerspectiveCamera, Ring } from '@react-three/drei'
 import HackerRoom from '../../HackerRoom/HackerRoom'
 import CanvasLoader from '../../Loader/CanvasLoader'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../../../Constants'
-import Target from '../../Target/Target'
-import ReactLogo from '../../ReactLogo/ReactLogo'
-import Cube from '../../Cube/Cube'
-import Rings from '../../Ring/Rings'
+//import Target from '../../Target/Target'
+//import ReactLogo from '../../ReactLogo/ReactLogo'
+//import Cube from '../../Cube/Cube'
+//import Rings from '../../Ring/Rings'
 import HeroCamera from '../../HeroCamera'
-import Button from '../../Button'
-import { Spotlight } from '../../ui/SpotlightNew'
+import {InteractiveHoverButton} from '../../Button'
 
 const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -58,10 +57,22 @@ const Hero = () => {
                     </Suspense>
                 </Canvas>
             </div>
-            <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
+            <div className='absolute left-0 right-0 bottom-12 w-full items-center justify-between flex z-10'>
+                <div>
+                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200  border border-gray-700'>
+                        Download Resume
+                    </InteractiveHoverButton>
+                </div>
                 <a href="#about" className='w-fit'>
-                    <Button name="Let's work together" isBeam   containerClass="sm:w-fit w-full sm:min-w-96"/>
+                    <InteractiveHoverButton className="sm:w-fit w-[150px] sm:min-w-60 text-gray-200 border border-gray-700">
+                        Let's Work together
+                    </InteractiveHoverButton>
                 </a>
+                <div>
+                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200 border border-gray-700'>
+                        <a href="#contact">Contact Me</a>
+                    </InteractiveHoverButton>
+                </div>
             </div>
         </section>
     )

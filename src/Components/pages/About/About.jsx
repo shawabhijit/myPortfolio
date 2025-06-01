@@ -1,6 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
 import Globe from 'react-globe.gl'
-import Button from '../../Button'
+import { InteractiveHoverButton } from '../../Button'
+import { motion } from 'framer-motion'
 
 const techStack = [
     {
@@ -55,7 +56,7 @@ const techStack = [
         name: "Docker",
         image: "/assets/docker.png",
     },
-    
+
     {
         name: "Notion",
         image: "/assets/notion.svg",
@@ -76,7 +77,7 @@ const techStack = [
 
 const About = () => {
 
-    const [hasCopied, setHasCopied] = React.useState(false);
+    const [hasCopied, setHasCopied] = useState(false);
 
     const handleCopy = () => {
         navigator.clipboard.writeText("shawabhijit370@gmail.com")
@@ -88,8 +89,30 @@ const About = () => {
         }, 2000);
     }
 
+    const fadeInAnimationVariants = {
+        initial: {
+            opacity: 0,
+            y: 100,
+        },
+        animate: (index) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.1 * index,
+                duration: 1,
+                ease: "easeInOut",
+            }
+        }),
+    }
+
     return (
-        <section className='c-space my-20 z-10 mx-w-7xl mx-auto' id='about'>
+        <motion.section
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView={"animate"}
+            viewport={{ once: true, amount: 0.2 }}
+
+            className='c-space my-20 z-10 mx-w-7xl mx-auto' id='about'>
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
@@ -105,9 +128,15 @@ const About = () => {
                         <div className="relative flex h-[280px] w-full flex-wrap items-center justify-center overflow-hidden">
                             {
                                 techStack.map((tech, index) => (
-                                    <div key={index} className="flex items-center justify-center m-1 p-2 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                    <motion.div key={index}
+                                        variants={fadeInAnimationVariants}
+                                        initial="initial"
+                                        whileInView={"animate"}
+                                        viewport={{ once: true }}
+                                        custom={index}
+                                        className="flex items-center justify-center m-1 p-2 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
                                         <img src={tech.image} alt={tech.name} className="h-8 w-8 rounded-full" />
-                                    </div>
+                                    </motion.div>
                                 ))
                             }
                         </div>
@@ -124,7 +153,7 @@ const About = () => {
                                 height={336}
                                 width={336}
                                 backgroundColor='rgba(0, 0, 0, 0)'
-                                // backgroundImageOpacity={0.5}
+                                backgroundImageOpacity={0.5}
                                 showAtmosphere
                                 showGraticules
                                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
@@ -133,8 +162,13 @@ const About = () => {
                         </div>
                         <div>
                             <p className='grid-headtext'>I Work remotely across most timezones.</p>
-                            <p className='grid-subtext'>I'm based in India , with remmot work available.</p>
-                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            <p className='grid-subtext mb-10'>I'm based in India , with remmot work available.</p>
+                            {/* <Button name="Contact Me" isBeam containerClass="w-full mt-10" /> */}
+                            <a href="#about" className='w-fit'>
+                                <InteractiveHoverButton className="sm:w-fit w-full sm:min-w-80 text-gray-200 border border-gray-700">
+                                    Contact Me
+                                </InteractiveHoverButton>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +196,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
