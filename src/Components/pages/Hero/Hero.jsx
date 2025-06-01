@@ -57,10 +57,10 @@ const Hero = () => {
                     </Suspense>
                 </Canvas>
             </div>
-            <div className='absolute left-0 right-0 bottom-12 w-full items-center justify-between flex z-10'>
+            <div className='absolute left-8 right-0 bottom-12 w-[95%] items-center justify-between flex z-10'>
                 <div>
-                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200  border border-gray-700'>
-                        Download Resume
+                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200 border border-gray-700'>
+                        <a href="#contact">Contact Me</a>
                     </InteractiveHoverButton>
                 </div>
                 <a href="#about" className='w-fit'>
@@ -68,11 +68,11 @@ const Hero = () => {
                         Let's Work together
                     </InteractiveHoverButton>
                 </a>
-                <div>
-                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200 border border-gray-700'>
-                        <a href="#contact">Contact Me</a>
+                <a href='https://drive.google.com/file/d/1KpWkcpusx-GKDHgzvl9kUAoGxqxjnWRo/view?usp=drive_link' target='blank' download={"myResume.pdf"}>
+                    <InteractiveHoverButton className='sm:w-fit w-[150px] sm:min-w-60 text-gray-200  border border-gray-700'>
+                        View My Resume
                     </InteractiveHoverButton>
-                </div>
+                </a>
             </div>
         </section>
     )
