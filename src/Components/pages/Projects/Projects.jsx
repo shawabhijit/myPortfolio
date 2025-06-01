@@ -93,7 +93,7 @@ const Projects = () => {
                         <p className="animatedText">{currentProject.subdesc}</p>
                     </div>
                     <div className="flex items-center justify-between flex-wrap gap-5">
-                        <div className="flex items-center gap-3">
+                        <div className="flex flex-wrap items-center gap-3">
                             {
                                 currentProject.tags.map((tag,index) => (
                                     <motion.div key={index} 
@@ -144,7 +144,7 @@ const Projects = () => {
                                 </group>
                             </Suspense>
                             {/* <ContactShadows position={[0, -4.5, 0]} scale={20} blur={2} far={4.5} /> */}
-                            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+                            {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} /> */}
                         </Center>
                     </Canvas>
                 </motion.div>

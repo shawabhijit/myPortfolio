@@ -24,7 +24,7 @@ const Hero = () => {
     // }
 
     return (
-        <section className='min-h-screen w-full flex flex-col justify-center mt-[-80px] relative overflow-hidden' id='home'>
+        <section className='md:min-h-screen h-[85vh] w-full flex flex-col justify-center mt-[-80px] relative overflow-hidden' id='home'>
             {/* <Spotlight /> */}
             <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 '>
                 <motion.p
