@@ -4,8 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../Loader/CanvasLoader";
 import DemoComputer from "../../DemoComputer/DemoComputer";
-import {animate, motion } from "framer-motion";
-import { X } from "lucide-react";
+import { motion } from "framer-motion";
 
 const projectCount = myProjects.length;
 

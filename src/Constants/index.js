@@ -74,42 +74,42 @@ export const myProjects = [
             },
         ],
     },
-    {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-        subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        logo: '/assets/project-logo2.png',
-        logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-        },
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    }
+    //{
+    //     title: 'LiveDoc - Real-Time Google Docs Clone',
+    //     desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    //     subdesc:
+    //         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+    //     href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    //     logo: '/assets/project-logo2.png',
+    //     logoStyle: {
+    //         backgroundColor: '#13202F',
+    //         border: '0.2px solid #17293E',
+    //         boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    //     },
+    //     spotlight: '/assets/spotlight2.png',
+    //     tags: [
+    //         {
+    //             id: 1,
+    //             name: 'React.js',
+    //             path: '/assets/react.svg',
+    //         },
+    //         {
+    //             id: 2,
+    //             name: 'TailwindCSS',
+    //             path: 'assets/tailwindcss.png',
+    //         },
+    //         {
+    //             id: 3,
+    //             name: 'TypeScript',
+    //             path: '/assets/typescript.png',
+    //         },
+    //         {
+    //             id: 4,
+    //             name: 'Framer Motion',
+    //             path: '/assets/framer.png',
+    //         },
+    //     ],
+    // }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

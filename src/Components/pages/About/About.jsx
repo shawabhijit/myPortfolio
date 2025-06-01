@@ -165,7 +165,7 @@ const About = () => {
                             <p className='grid-subtext mb-10'>I'm based in India , with remmot work available.</p>
                             {/* <Button name="Contact Me" isBeam containerClass="w-full mt-10" /> */}
                             <a href="#about" className='w-fit'>
-                                <InteractiveHoverButton className="sm:w-fit w-full sm:min-w-80 text-gray-200 border border-gray-700">
+                                <InteractiveHoverButton className="sm:w-fit w-full sm:min-w-80 text-gray-200 border border-gray-700 bg-inherit">
                                     Contact Me
                                 </InteractiveHoverButton>
                             </a>

@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'General Sans';
+    font-weight: bold;
+    src: url('/assets/Satoshi-Bold.woff2');
+  }
+}
+
+
 * {
   scroll-behavior: smooth;
 }
@@ -11,6 +20,10 @@
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 @layer utilities {
@@ -57,7 +70,7 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-[80px] md:text-6xl sm:text-5xl text-3xl font-generalsans font-black !leading-normal;
   }
 
   /* about section */
