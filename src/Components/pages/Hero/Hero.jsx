@@ -3,6 +3,7 @@
 // import { calculateSizes } from '../../../Constants'
 import {motion} from 'framer-motion'
 import { Snippet } from '@heroui/snippet'
+import ScrollSection from '../../ScrollToNext'
 
 const Hero = () => {
     // const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -24,7 +25,7 @@ const Hero = () => {
     // }
 
     return (
-        <section className='md:min-h-screen h-[85vh] w-full flex flex-col justify-center mt-[-80px] relative overflow-hidden' id='home'>
+        <section className='md:min-h-screen h-[85vh] w-full flex flex-col justify-center relative overflow-hidden' id='home'>
             {/* <Spotlight /> */}
             <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 '>
                 <motion.p
@@ -61,6 +62,8 @@ const Hero = () => {
                     npx abhijit_sahoo07
                 </Snippet>
             </motion.div>
+
+            <ScrollSection />
         </section>
     )
 }
