@@ -12,7 +12,7 @@ const App = () => {
       < div className='overflow-hidden absolute inset-0' >
         <Spotlight />
       </div >
-      <main className='max-w-7xl mx-auto p-4 relative'>
+      <main className='max-w-[85rem] mx-auto p-4 relative overflow-hidden'>
         <Navber />
         <Hero />
         <About />

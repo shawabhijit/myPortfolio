@@ -29,6 +29,7 @@ export const myProjects = [
         subdesc:
             'HiakriHub provides multiple features to manage vendor account as well as customer accoutn , features like - vendor can create products manage those products and also manage orders and can see full analytics of the account , In the customer side customer can wishlist product , save products in the cart and buy any product using secure payemtn system (Razorpay).',
         href: 'https://hiakrihub.netlify.app/',
+        git: '',
         logo: '/assets/hiakriHub-logo.png',
         logoStyle: {
             backgroundColor: '#2A1816',
@@ -74,42 +75,34 @@ export const myProjects = [
             },
         ],
     },
-    //{
-    //     title: 'LiveDoc - Real-Time Google Docs Clone',
-    //     desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    //     subdesc:
-    //         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    //     href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    //     logo: '/assets/project-logo2.png',
-    //     logoStyle: {
-    //         backgroundColor: '#13202F',
-    //         border: '0.2px solid #17293E',
-    //         boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    //     },
-    //     spotlight: '/assets/spotlight2.png',
-    //     tags: [
-    //         {
-    //             id: 1,
-    //             name: 'React.js',
-    //             path: '/assets/react.svg',
-    //         },
-    //         {
-    //             id: 2,
-    //             name: 'TailwindCSS',
-    //             path: 'assets/tailwindcss.png',
-    //         },
-    //         {
-    //             id: 3,
-    //             name: 'TypeScript',
-    //             path: '/assets/typescript.png',
-    //         },
-    //         {
-    //             id: 4,
-    //             name: 'Framer Motion',
-    //             path: '/assets/framer.png',
-    //         },
-    //     ],
-    // }
+    {
+        title: 'ClariPix – AI-Powered Image Editing Platform',
+        desc: 'ClariPix is a full-stack AI-powered image editing and management platform where users can upload images and enhance them using intelligent tools like background removal, AI background generation, upscaling, and format conversion.',
+        subdesc:
+            'ClariPix focuses on simplifying image editing using AI. Users can remove or replace backgrounds, upscale image quality, remove text or watermarks, crop, resize, rotate images, and convert between formats (PNG, JPG, WebP). It also supports text-to-image generation and secure cloud-based image storage using Cloudinary. The frontend is built with React (Vite) and TypeScript, styled using Tailwind CSS and shadcn UI, while the backend is powered by Spring Boot with PostgreSQL.',
+        href: '',
+        git: 'https://github.com/shawabhijit/ClariPix',
+        logo: '/assets/claripix-logo.png',
+        logoStyle: {
+            backgroundColor: '#0F1724',
+            border: '0.2px solid #1F2937',
+            boxShadow: '0px 6px 40px 0px #0EA5A70F',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            { id: 1, name: 'React.js', path: '/assets/react.svg' },
+            { id: 2, name: 'TypeScript', path: '/assets/typescript.png' },
+            { id: 3, name: 'TailwindCSS', path: '/assets/tailwindcss.png' },
+            { id: 4, name: 'Spring Boot', path: '/assets/spring-boot.png' },
+            { id: 5, name: 'PostgreSQL', path: '/assets/postgresql-48.png' },
+            {
+                id: 6,
+                name: 'Framer Motion',
+                path: '/assets/framer.png',
+            },
+            { id: 7, name: 'Docker', path: '/assets/docker.png' },
+        ],
+    },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

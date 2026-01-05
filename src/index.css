@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base hover:text-orange-500 transition-colors;
   }
 
   .nav-sidebar {
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-[80px] md:text-6xl sm:text-5xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-[90px] md:text-6xl sm:text-5xl text-3xl font-generalsans font-black;
   }
 
   /* about section */

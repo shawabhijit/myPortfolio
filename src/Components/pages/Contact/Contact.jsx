@@ -76,13 +76,13 @@ const Contact = () => {
             whileInView="animate"
             viewport={{ once: true, amount: 0.2 }}
             custom={1}
-        className='c-space my-20 mt-20' id='contact'>
+        className='c-space my-20 mt-20 p-5' id='contact'>
             <div className='relative min-h-screen flex items-center justify-center flex-col'>
                 {
                     !isMobile && <img src="/assets/terminal.png" alt="terminal-background"
                         className='absolute inset-0 min-h-screen' />
                 }
-                <div className={`contact-container ${isMobile ? 'border border-dashed border-gray-700 p-3' : ''}`}>
+                <div className={`contact-container ${isMobile ? 'border border-dashed border-gray-700 p-3' : 'p-10'}`}>
                     <h3 className='head-text'>Contact Me</h3>
                     <p className='text-lg text-white-600 mt-3'>
                         I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 

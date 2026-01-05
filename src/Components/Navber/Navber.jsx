@@ -26,7 +26,7 @@ const Navber = () => {
     <div className='text-white fixed top-0 right-0 left-0 bg-black/90 z-20 '>
       <div className='max-w-7xl mx-auto'>
         <div className='flex justify-between items-center py-5 mx-auto c-space'>
-          <a href="/" className='text-neutral-400 font-bold text-xl hover:text-white transition-colors'>
+          <a href="/" className='text-orange-500 font-bold text-xl hover:text-white transition-colors'>
             ABHIJIT
           </a>
 
@@ -38,7 +38,7 @@ const Navber = () => {
             
             <NavItems />
             <a href='https://drive.google.com/file/d/1KpWkcpusx-GKDHgzvl9kUAoGxqxjnWRo/view?usp=drive_link' target='blank' download={"myResume.pdf"}
-              className='text-white-600 hover:text-white transition-colors text-sm font-medium bg-gray-800 px-4 py-2 rounded-lg shadow-lg shadow-black/20'
+              className='text-white-600 hover:text-orange-500 transition-colors text-sm font-medium bg-gray-800 px-4 py-2 rounded-lg shadow-lg shadow-black/20'
             >
               View My Resume
             </a>
@@ -50,7 +50,7 @@ const Navber = () => {
           <NavItems />
           <div className='mt-5 ml-4'>
             <a href='https://drive.google.com/file/d/1KpWkcpusx-GKDHgzvl9kUAoGxqxjnWRo/view?usp=drive_link' target='blank' download={"myResume.pdf"}
-              className='text-white-600 hover:text-white transition-colors text-sm font-medium bg-gray-800 px-4 py-2 rounded-lg shadow-lg shadow-black/20'
+              className='text-white-600 hover:text-orange-500 transition-colors text-sm font-medium bg-gray-800 px-4 py-2 rounded-lg shadow-lg shadow-black/20'
             >
               View My Resume
             </a>

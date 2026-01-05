@@ -16,6 +16,11 @@ const contacts = [
         image: '/assets/instagram.svg',
         link: 'https://www.instagram.com/abhijit_sahoo_7/',
     },
+    {
+        name: 'X',
+        image: '/assets/twitter.png',
+        link: 'https://x.com/abhijitDotTech',
+    },
 ]
 
 const Footer = () => {
@@ -32,14 +37,10 @@ const Footer = () => {
                         <motion.div 
                             className="social-icon" 
                             key={index}
-                            initial={{ opacity: 0, y: 100 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: 0.2 }}
-                            custom={index}
-                            transition={{ delay: 0.05 * index, duration: 1, ease: 'easeInOut' }}
+                            
                         >
-                            <a href={contact.link} className='flex items-center justify-center w-full h-full' target="_blank" rel="noreferrer">
-                                <img src={contact.image} alt={contact.name} className='w-1/2 h-1/2' />
+                            <a href={contact.link} className='flex items-center justify-center w-full h-full p-0' target="_blank" rel="noreferrer">
+                                <img src={contact.image} alt={contact.name} className={`${contact.name === "X" ? "w-12 h-12" : "w-12 h-12" }`} />
                             </a>
                         </motion.div>
                     ))
